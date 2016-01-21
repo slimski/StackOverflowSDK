@@ -1,0 +1,815 @@
+{
+    "items": [
+              {
+              "tags": [
+                       "iphone",
+                       "ios",
+                       "uinavigationcontroller",
+                       "segue"
+                       ],
+              "owner": {
+              "reputation": 203,
+              "user_id": 1850240,
+              "user_type": "registered",
+              "profile_image": "https://www.gravatar.com/avatar/7f47a4c92fded67cdf4213871b288cfa?s=128&d=identicon&r=PG",
+              "display_name": "DouglasBoone",
+              "link": "http://stackoverflow.com/users/1850240/douglasboone"
+              },
+              "is_answered": true,
+              "view_count": 31048,
+              "accepted_answer_id": 15944580,
+              "answer_count": 11,
+              "score": 40,
+              "last_activity_date": 1453196416,
+              "creation_date": 1353794944,
+              "question_id": 13546122,
+              "link": "http://stackoverflow.com/questions/13546122/nsgenericexception-reason-push-segues-can-only-be-used-when-the-source-contr",
+              "title": "NSGenericException&#39;, reason: &#39;Push segues can only be used when the source controller is managed by an instance of UINavigationController"
+              },
+              {
+              "tags": [
+                       "ios",
+                       "swift",
+                       "swift2"
+                       ],
+              "owner": {
+              "reputation": 419,
+              "user_id": 594992,
+              "user_type": "registered",
+              "accept_rate": 56,
+              "profile_image": "https://www.gravatar.com/avatar/774a1826eee03008df27401f7c0cbed5?s=128&d=identicon&r=PG",
+              "display_name": "ton",
+              "link": "http://stackoverflow.com/users/594992/ton"
+              },
+              "is_answered": false,
+              "view_count": 20,
+              "answer_count": 1,
+              "score": 1,
+              "last_activity_date": 1453183621,
+              "creation_date": 1453183204,
+              "last_edit_date": 1453183548,
+              "question_id": 34869507,
+              "link": "http://stackoverflow.com/questions/34869507/device-rotation-in-a-specific-uiviewcontroller-within-uitabbarcontroller-and-uin",
+              "title": "Device rotation in a specific UIViewController within UITabBarController and UINavigationController"
+              },
+              {
+              "tags": [
+                       "ios",
+                       "swift2",
+                       "uinavigationbar",
+                       "ios9",
+                       "uisearchcontroller"
+                       ],
+              "owner": {
+              "reputation": 351,
+              "user_id": 4444642,
+              "user_type": "registered",
+              "accept_rate": 55,
+              "profile_image": "https://www.gravatar.com/avatar/19c1553c16a518fddd0831ed37e85a3c?s=128&d=identicon&r=PG&f=1",
+              "display_name": "jbehrens94",
+              "link": "http://stackoverflow.com/users/4444642/jbehrens94"
+              },
+              "is_answered": true,
+              "view_count": 34,
+              "accepted_answer_id": 34859624,
+              "answer_count": 1,
+              "score": 0,
+              "last_activity_date": 1453134765,
+              "creation_date": 1453131225,
+              "question_id": 34858439,
+              "link": "http://stackoverflow.com/questions/34858439/ios-9-hairline-between-uinavigationcontroller-and-uisearchbar",
+              "title": "iOS 9 hairline between UINavigationController and UISearchBar"
+              },
+              {
+              "tags": [
+                       "ios",
+                       "objective-c",
+                       "cocoa-touch",
+                       "uinavigationcontroller",
+                       "uinavigationbar"
+                       ],
+              "owner": {
+              "reputation": 1903,
+              "user_id": 1203228,
+              "user_type": "registered",
+              "accept_rate": 74,
+              "profile_image": "https://www.gravatar.com/avatar/56cbed6ac4499408c96dccf21f51434f?s=128&d=identicon&r=PG",
+              "display_name": "Sti",
+              "link": "http://stackoverflow.com/users/1203228/sti"
+              },
+              "is_answered": true,
+              "view_count": 25726,
+              "accepted_answer_id": 21548900,
+              "answer_count": 10,
+              "score": 34,
+              "last_activity_date": 1453115042,
+              "creation_date": 1386403298,
+              "last_edit_date": 1391777803,
+              "question_id": 20439167,
+              "link": "http://stackoverflow.com/questions/20439167/is-there-a-way-to-change-the-height-of-a-uinavigationbar-in-storyboard-without-u",
+              "title": "Is there a way to change the height of a UINavigationBar in Storyboard without using a UINavigationController?"
+              },
+              {
+              "tags": [
+                       "ios",
+                       "iphone",
+                       "xcode",
+                       "swift",
+                       "parse.com"
+                       ],
+              "owner": {
+              "reputation": 26,
+              "user_id": 5692398,
+              "user_type": "registered",
+              "accept_rate": 50,
+              "profile_image": "https://www.gravatar.com/avatar/da9bd4532f701d6a09991bef4d05e399?s=128&d=identicon&r=PG&f=1",
+              "display_name": "PiterPan",
+              "link": "http://stackoverflow.com/users/5692398/piterpan"
+              },
+              "is_answered": true,
+              "view_count": 19,
+              "accepted_answer_id": 34842093,
+              "answer_count": 1,
+              "score": 0,
+              "last_activity_date": 1453062354,
+              "creation_date": 1453052587,
+              "last_edit_date": 1453062354,
+              "question_id": 34841473,
+              "link": "http://stackoverflow.com/questions/34841473/after-segue-using-storyboard-id-uinavigationcontroller-disappears",
+              "title": "After segue using Storyboard ID UINavigationController disappears"
+              },
+              {
+              "tags": [
+                       "ios",
+                       "objective-c"
+                       ],
+              "owner": {
+              "reputation": 8,
+              "user_id": 5802177,
+              "user_type": "registered",
+              "profile_image": "https://www.gravatar.com/avatar/48ee78cc79b8c62286d3fa296bc065f8?s=128&d=identicon&r=PG&f=1",
+              "display_name": "hollaser",
+              "link": "http://stackoverflow.com/users/5802177/hollaser"
+              },
+              "is_answered": true,
+              "view_count": 32,
+              "accepted_answer_id": 34841904,
+              "answer_count": 1,
+              "score": 1,
+              "last_activity_date": 1453057559,
+              "creation_date": 1453053880,
+              "question_id": 34841732,
+              "link": "http://stackoverflow.com/questions/34841732/fake-uinavigationcontroller-slide-animation",
+              "title": "Fake UINavigationController slide animation"
+              },
+              {
+              "tags": [
+                       "ios",
+                       "swift",
+                       "uinavigationbar",
+                       "ios9",
+                       "uibarbuttonitem"
+                       ],
+              "owner": {
+              "reputation": 487,
+              "user_id": 4270833,
+              "user_type": "registered",
+              "accept_rate": 56,
+              "profile_image": "https://www.gravatar.com/avatar/d74d9a182a80a41e37a1ccaa43e4c96b?s=128&d=identicon&r=PG&f=1",
+              "display_name": "david",
+              "link": "http://stackoverflow.com/users/4270833/david"
+              },
+              "is_answered": false,
+              "view_count": 37,
+              "answer_count": 0,
+              "score": 0,
+              "last_activity_date": 1452782507,
+              "creation_date": 1452777455,
+              "last_edit_date": 1452782507,
+              "question_id": 34790631,
+              "link": "http://stackoverflow.com/questions/34790631/how-to-add-multiple-buttons-to-navigation-bar-without-uinavigationcontroller",
+              "title": "How to add multiple buttons to navigation bar without UINavigationController?"
+              },
+              {
+              "tags": [
+                       "ios",
+                       "swift",
+                       "uiviewcontroller",
+                       "uinavigationcontroller"
+                       ],
+              "owner": {
+              "reputation": 50,
+              "user_id": 5390680,
+              "user_type": "registered",
+              "accept_rate": 60,
+              "profile_image": "https://www.gravatar.com/avatar/197deff649771f401ebfeb279c8d7318?s=128&d=identicon&r=PG&f=1",
+              "display_name": "Drew S.",
+              "link": "http://stackoverflow.com/users/5390680/drew-s"
+              },
+              "is_answered": true,
+              "view_count": 33,
+              "accepted_answer_id": 34790279,
+              "answer_count": 1,
+              "score": 0,
+              "last_activity_date": 1452776681,
+              "creation_date": 1452775076,
+              "last_edit_date": 1452776681,
+              "question_id": 34789844,
+              "link": "http://stackoverflow.com/questions/34789844/how-to-push-a-uiviewcontroller-on-top-of-uinavigationcontroller-instead-of-insi",
+              "title": "How to push a UIViewController on top of UINavigationController (instead of inside it)?"
+              },
+              {
+              "tags": [
+                       "ios",
+                       "iphone",
+                       "swift"
+                       ],
+              "owner": {
+              "reputation": 6,
+              "user_id": 5521276,
+              "user_type": "registered",
+              "profile_image": "https://www.gravatar.com/avatar/1aa47656629e70c361b4f1734ba76192?s=128&d=identicon&r=PG&f=1",
+              "display_name": "ematalb",
+              "link": "http://stackoverflow.com/users/5521276/ematalb"
+              },
+              "is_answered": false,
+              "view_count": 40,
+              "answer_count": 1,
+              "score": 1,
+              "last_activity_date": 1452757986,
+              "creation_date": 1452675550,
+              "last_edit_date": 1452681347,
+              "question_id": 34762267,
+              "link": "http://stackoverflow.com/questions/34762267/attempt-to-present-uinavigationcontroller-on-firstcontroller-whose-view-is-not",
+              "title": "Attempt to present &lt;UINavigationController&gt; on firstController whose view is not in the window hierarchy"
+              },
+              {
+              "tags": [
+                       "ios",
+                       "uinavigationcontroller",
+                       "uitoolbar",
+                       "iphone-5"
+                       ],
+              "owner": {
+              "reputation": 630,
+              "user_id": 1193977,
+              "user_type": "registered",
+              "accept_rate": 66,
+              "profile_image": "https://www.gravatar.com/avatar/bc666421d3b0fb7a9b8f2c0db1691f57?s=128&d=identicon&r=PG",
+              "display_name": "drc",
+              "link": "http://stackoverflow.com/users/1193977/drc"
+              },
+              "is_answered": true,
+              "view_count": 28022,
+              "accepted_answer_id": 16215149,
+              "answer_count": 3,
+              "score": 28,
+              "last_activity_date": 1452606942,
+              "creation_date": 1366893604,
+              "last_edit_date": 1394882962,
+              "question_id": 16215034,
+              "link": "http://stackoverflow.com/questions/16215034/set-rootviewcontroller-of-uinavigationcontroller-by-method-other-than-initwithro",
+              "title": "Set rootViewController of UINavigationController by method other than initWithRootViewController"
+              },
+              {
+              "tags": [
+                       "ios",
+                       "performance",
+                       "ios8",
+                       "uinavigationcontroller",
+                       "ios9"
+                       ],
+              "owner": {
+              "reputation": 487,
+              "user_id": 4270833,
+              "user_type": "registered",
+              "accept_rate": 56,
+              "profile_image": "https://www.gravatar.com/avatar/d74d9a182a80a41e37a1ccaa43e4c96b?s=128&d=identicon&r=PG&f=1",
+              "display_name": "david",
+              "link": "http://stackoverflow.com/users/4270833/david"
+              },
+              "is_answered": true,
+              "view_count": 34,
+              "answer_count": 3,
+              "score": 2,
+              "last_activity_date": 1452594323,
+              "creation_date": 1452342769,
+              "last_edit_date": 1452352556,
+              "question_id": 34693489,
+              "link": "http://stackoverflow.com/questions/34693489/what-are-the-benefits-of-using-a-uinavigationcontroller-over-adding-a-view-with",
+              "title": "What are the benefits of using a UINavigationController over adding a view with addSubView?"
+              },
+              {
+              "tags": [
+                       "ios",
+                       "swift",
+                       "uinavigationcontroller"
+                       ],
+              "owner": {
+              "reputation": 2856,
+              "user_id": 56581,
+              "user_type": "registered",
+              "accept_rate": 71,
+              "profile_image": "https://www.gravatar.com/avatar/594bae9bad0d1c0952c1a9b0d427f445?s=128&d=identicon&r=PG",
+              "display_name": "Daniel",
+              "link": "http://stackoverflow.com/users/56581/daniel"
+              },
+              "is_answered": false,
+              "view_count": 26,
+              "answer_count": 0,
+              "score": 1,
+              "last_activity_date": 1452564340,
+              "creation_date": 1452502316,
+              "last_edit_date": 1452564340,
+              "question_id": 34717350,
+              "link": "http://stackoverflow.com/questions/34717350/sfsafariviewcontroller-shows-incorrectly-when-pushed-in-uinavigationcontroller-w",
+              "title": "SFSafariViewController shows incorrectly when pushed in UINavigationController with modalPresentationStyle = .FormSheet"
+              },
+              {
+              "tags": [
+                       "ios",
+                       "uitableview",
+                       "uisearchcontroller"
+                       ],
+              "owner": {
+              "reputation": 1503,
+              "user_id": 1588409,
+              "user_type": "registered",
+              "accept_rate": 29,
+              "profile_image": "https://www.gravatar.com/avatar/f8d09931a46e083d7b725add0235684e?s=128&d=identicon&r=PG&f=1",
+              "display_name": "Jason Hocker",
+              "link": "http://stackoverflow.com/users/1588409/jason-hocker"
+              },
+              "is_answered": false,
+              "view_count": 47,
+              "answer_count": 1,
+              "score": 1,
+              "last_activity_date": 1452401068,
+              "creation_date": 1442526668,
+              "last_edit_date": 1442528883,
+              "question_id": 32640535,
+              "link": "http://stackoverflow.com/questions/32640535/uitableviewcontoller-in-uinavigationcontroller-with-uisearchcontroller-wrong-aft",
+              "title": "UITableViewContoller in UINavigationController with UISearchController wrong after back button"
+              },
+              {
+              "tags": [
+                       "swift",
+                       "uinavigationcontroller"
+                       ],
+              "owner": {
+              "reputation": 82,
+              "user_id": 1870795,
+              "user_type": "registered",
+              "accept_rate": 84,
+              "profile_image": "https://i.stack.imgur.com/8lXCO.jpg?s=128&g=1",
+              "display_name": "Manuel",
+              "link": "http://stackoverflow.com/users/1870795/manuel"
+              },
+              "is_answered": true,
+              "view_count": 21,
+              "accepted_answer_id": 34695866,
+              "answer_count": 1,
+              "score": 0,
+              "last_activity_date": 1452356385,
+              "creation_date": 1452351525,
+              "question_id": 34695003,
+              "link": "http://stackoverflow.com/questions/34695003/uinavigationcontroller-always-responds-to-selector-interactivepopgesturerecogniz",
+              "title": "UINavigationController always responds to selector interactivePopGestureRecognizer?"
+              },
+              {
+              "tags": [
+                       "iphone",
+                       "cocoa-touch"
+                       ],
+              "owner": {
+              "reputation": 1455,
+              "user_id": 51420,
+              "user_type": "registered",
+              "accept_rate": 67,
+              "profile_image": "https://www.gravatar.com/avatar/da9de6109a33b190d42f536c05eaf78b?s=128&d=identicon&r=PG",
+              "display_name": "Dan Morgan",
+              "link": "http://stackoverflow.com/users/51420/dan-morgan"
+              },
+              "is_answered": false,
+              "view_count": 1362,
+              "answer_count": 2,
+              "score": 0,
+              "last_activity_date": 1452350080,
+              "creation_date": 1233499119,
+              "last_edit_date": 1452350080,
+              "question_id": 500926,
+              "link": "http://stackoverflow.com/questions/500926/uinavigationcontroller-only-in-first-xib-apples-editbledetailview",
+              "title": "UINavigationController only in first XIB. Apple&#39;s EditbleDetailView"
+              },
+              {
+              "tags": [
+                       "ios",
+                       "objective-c",
+                       "xcode",
+                       "uinavigationcontroller",
+                       "uigesturerecognizer"
+                       ],
+              "owner": {
+              "reputation": 1591,
+              "user_id": 957492,
+              "user_type": "registered",
+              "accept_rate": 100,
+              "profile_image": "https://i.stack.imgur.com/oTNep.jpg?s=128&g=1",
+              "display_name": "mihai",
+              "link": "http://stackoverflow.com/users/957492/mihai"
+              },
+              "is_answered": true,
+              "view_count": 9001,
+              "accepted_answer_id": 24807201,
+              "answer_count": 6,
+              "score": 24,
+              "last_activity_date": 1452275166,
+              "creation_date": 1405146081,
+              "last_edit_date": 1405349621,
+              "question_id": 24710258,
+              "link": "http://stackoverflow.com/questions/24710258/no-swipe-back-when-hiding-navigation-bar-in-uinavigationcontroller",
+              "title": "No Swipe Back when hiding Navigation Bar in UINavigationController"
+              },
+              {
+              "tags": [
+                       "iphone",
+                       "ios",
+                       "uinavigationcontroller"
+                       ],
+              "owner": {
+              "reputation": 163,
+              "user_id": 724480,
+              "user_type": "registered",
+              "accept_rate": 40,
+              "profile_image": "https://www.gravatar.com/avatar/a43cfa89ad8afd552af425e659365796?s=128&d=identicon&r=PG",
+              "display_name": "Ozay",
+              "link": "http://stackoverflow.com/users/724480/ozay"
+              },
+              "is_answered": true,
+              "view_count": 10556,
+              "accepted_answer_id": 6389295,
+              "answer_count": 7,
+              "score": 19,
+              "last_activity_date": 1452257161,
+              "creation_date": 1308329588,
+              "last_edit_date": 1426164885,
+              "question_id": 6389094,
+              "link": "http://stackoverflow.com/questions/6389094/adding-same-button-to-all-view-controllers-in-uinavigationcontroller",
+              "title": "Adding same button to all view controllers in UINavigationController"
+              },
+              {
+              "tags": [
+                       "ios",
+                       "swift"
+                       ],
+              "owner": {
+              "reputation": 401,
+              "user_id": 1925859,
+              "user_type": "registered",
+              "accept_rate": 49,
+              "profile_image": "https://www.gravatar.com/avatar/338278752a2184e405d5e3ed08d025c6?s=128&d=identicon&r=PG",
+              "display_name": "Brosef",
+              "link": "http://stackoverflow.com/users/1925859/brosef"
+              },
+              "is_answered": false,
+              "view_count": 22,
+              "answer_count": 1,
+              "score": 0,
+              "last_activity_date": 1452192196,
+              "creation_date": 1452188934,
+              "last_edit_date": 1452192196,
+              "question_id": 34661848,
+              "link": "http://stackoverflow.com/questions/34661848/protocol-for-adjusting-uinavigationcontroller",
+              "title": "Protocol for adjusting UINavigationController"
+              },
+              {
+              "tags": [
+                       "ios",
+                       "uiscrollview",
+                       "uinavigationcontroller",
+                       "uinavigationbar"
+                       ],
+              "owner": {
+              "reputation": 40,
+              "user_id": 5464333,
+              "user_type": "registered",
+              "accept_rate": 80,
+              "profile_image": "https://www.gravatar.com/avatar/4a0f46344976e4eecf5528888c5aa9b4?s=128&d=identicon&r=PG&f=1",
+              "display_name": "Patrick Kelly",
+              "link": "http://stackoverflow.com/users/5464333/patrick-kelly"
+              },
+              "is_answered": true,
+              "view_count": 145,
+              "accepted_answer_id": 33532539,
+              "answer_count": 3,
+              "score": 1,
+              "last_activity_date": 1452121006,
+              "creation_date": 1446649626,
+              "question_id": 33525199,
+              "link": "http://stackoverflow.com/questions/33525199/ios9-uiscrollview-offset-in-uinavigationcontroller",
+              "title": "IOS9: UIScrollView offset in UINavigationController"
+              },
+              {
+              "tags": [
+                       "ios",
+                       "objective-c",
+                       "cocoa-touch",
+                       "uiviewcontroller"
+                       ],
+              "owner": {
+              "reputation": 105,
+              "user_id": 1940888,
+              "user_type": "registered",
+              "accept_rate": 57,
+              "profile_image": "https://www.gravatar.com/avatar/6dd2b2389bd14523f1cde927ed3f527f?s=128&d=identicon&r=PG",
+              "display_name": "user1940888",
+              "link": "http://stackoverflow.com/users/1940888/user1940888"
+              },
+              "is_answered": true,
+              "view_count": 11226,
+              "accepted_answer_id": 14233252,
+              "answer_count": 4,
+              "score": 11,
+              "last_activity_date": 1451915320,
+              "creation_date": 1357726953,
+              "last_edit_date": 1372279597,
+              "question_id": 14233017,
+              "link": "http://stackoverflow.com/questions/14233017/difference-between-presentviewcontroller-and-uinavigationcontroller",
+              "title": "difference between presentViewController and UINavigationController?"
+              },
+              {
+              "tags": [
+                       "objective-c",
+                       "cocoa-touch",
+                       "uiviewcontroller",
+                       "uinavigationcontroller",
+                       "uinavigationbar"
+                       ],
+              "owner": {
+              "reputation": 18925,
+              "user_id": 19875,
+              "user_type": "registered",
+              "accept_rate": 92,
+              "profile_image": "https://www.gravatar.com/avatar/dcb55baf9cd5a05c70569122b7184766?s=128&d=identicon&r=PG",
+              "display_name": "Sheehan Alam",
+              "link": "http://stackoverflow.com/users/19875/sheehan-alam"
+              },
+              "is_answered": true,
+              "view_count": 8789,
+              "accepted_answer_id": 5060630,
+              "answer_count": 4,
+              "score": 3,
+              "last_activity_date": 1451909205,
+              "creation_date": 1298240286,
+              "question_id": 5060454,
+              "link": "http://stackoverflow.com/questions/5060454/back-button-not-appearing-on-uinavigationcontroller",
+              "title": "Back button not appearing on UINavigationController"
+              },
+              {
+              "tags": [
+                       "ios",
+                       "uinavigationcontroller",
+                       "window",
+                       "rootviewcontroller"
+                       ],
+              "owner": {
+              "reputation": 1892,
+              "user_id": 390423,
+              "user_type": "registered",
+              "accept_rate": 49,
+              "profile_image": "https://www.gravatar.com/avatar/d3d9cfe4081594c6838248745efdc225?s=128&d=identicon&r=PG",
+              "display_name": "Developer",
+              "link": "http://stackoverflow.com/users/390423/developer"
+              },
+              "is_answered": false,
+              "view_count": 18,
+              "answer_count": 0,
+              "score": 1,
+              "last_activity_date": 1451884736,
+              "creation_date": 1451884736,
+              "question_id": 34585085,
+              "link": "http://stackoverflow.com/questions/34585085/what-is-the-difference-between-window-rootviewcontrooler-vs-uinavigationcontrol",
+              "title": "What is the difference between window.rootviewControoler VS [UINavigationController alloc] initWithRootViewController"
+              },
+              {
+              "tags": [
+                       "ios",
+                       "xcode",
+                       "uinavigation"
+                       ],
+              "owner": {
+              "reputation": 1,
+              "user_id": 5616909,
+              "user_type": "registered",
+              "profile_image": "https://www.gravatar.com/avatar/64a604e622b122246265e58f1b298c0f?s=128&d=identicon&r=PG&f=1",
+              "display_name": "Sang mai anh",
+              "link": "http://stackoverflow.com/users/5616909/sang-mai-anh"
+              },
+              "is_answered": false,
+              "view_count": 25,
+              "answer_count": 0,
+              "score": -1,
+              "last_activity_date": 1451884287,
+              "creation_date": 1451884287,
+              "question_id": 34585017,
+              "link": "http://stackoverflow.com/questions/34585017/uinavigationcontroller-pushviewcontroller-debug-crashes-report-for-xcode-7-2",
+              "title": "UINavigationController pushViewController. Debug Crashes report for xcode 7.2"
+              },
+              {
+              "tags": [
+                       "ios",
+                       "swift",
+                       "uinavigationcontroller"
+                       ],
+              "owner": {
+              "reputation": 146,
+              "user_id": 3994005,
+              "user_type": "registered",
+              "accept_rate": 69,
+              "profile_image": "https://www.gravatar.com/avatar/ff859baa3044be7846e9638102c914c7?s=128&d=identicon&r=PG&f=1",
+              "display_name": "user3994005",
+              "link": "http://stackoverflow.com/users/3994005/user3994005"
+              },
+              "is_answered": true,
+              "view_count": 14,
+              "accepted_answer_id": 34570748,
+              "answer_count": 2,
+              "score": 3,
+              "last_activity_date": 1451769621,
+              "creation_date": 1451768357,
+              "last_edit_date": 1451768772,
+              "question_id": 34570666,
+              "link": "http://stackoverflow.com/questions/34570666/dismissing-a-uinavigationcontroller-and-presenting-another-uinavigationcontrolle",
+              "title": "Dismissing a UINavigationController and Presenting another UINavigationController"
+              },
+              {
+              "tags": [
+                       "swift",
+                       "uinavigationcontroller",
+                       "uinavigationbar",
+                       "uitabbar"
+                       ],
+              "owner": {
+              "reputation": 13,
+              "user_id": 4051234,
+              "user_type": "registered",
+              "profile_image": "https://www.gravatar.com/avatar/f2c90c53a68b5cf1ce363559a88d0e86?s=128&d=identicon&r=PG&f=1",
+              "display_name": "RemyDCF",
+              "link": "http://stackoverflow.com/users/4051234/remydcf"
+              },
+              "is_answered": true,
+              "view_count": 24,
+              "accepted_answer_id": 34564839,
+              "answer_count": 1,
+              "score": 0,
+              "last_activity_date": 1451730349,
+              "creation_date": 1451730071,
+              "question_id": 34564796,
+              "link": "http://stackoverflow.com/questions/34564796/change-the-background-color-of-more-uinavigationcontroller-in-uitabbar-in-swif",
+              "title": "Change the background color of “More” UINavigationController in UITabBar in swift"
+              },
+              {
+              "tags": [
+                       "ios",
+                       "swift",
+                       "uiviewcontroller",
+                       "uinavigationcontroller",
+                       "target"
+                       ],
+              "owner": {
+              "reputation": 1729,
+              "user_id": 634324,
+              "user_type": "registered",
+              "accept_rate": 84,
+              "profile_image": "https://www.gravatar.com/avatar/307df244d4c98c5578f02dddd452cb43?s=128&d=identicon&r=PG&f=1",
+              "display_name": "Charles",
+              "link": "http://stackoverflow.com/users/634324/charles"
+              },
+              "is_answered": false,
+              "view_count": 19,
+              "answer_count": 1,
+              "score": 0,
+              "last_activity_date": 1451605362,
+              "creation_date": 1451599771,
+              "last_edit_date": 1451602579,
+              "question_id": 34552004,
+              "link": "http://stackoverflow.com/questions/34552004/wrong-target-when-calling-method-in-custom-uinavigationcontroller-from-uiviewcon",
+              "title": "Wrong target when calling method in custom UINavigationController from UIViewController"
+              },
+              {
+              "tags": [
+                       "ios",
+                       "objective-c",
+                       "uinavigationcontroller",
+                       "uinavigationbar",
+                       "ios8"
+                       ],
+              "owner": {
+              "reputation": 4669,
+              "user_id": 2128900,
+              "user_type": "registered",
+              "accept_rate": 100,
+              "profile_image": "https://i.stack.imgur.com/PwvTv.png?s=128&g=1",
+              "display_name": "Michał Ciuba",
+              "link": "http://stackoverflow.com/users/2128900/micha%c5%82-ciuba"
+              },
+              "is_answered": true,
+              "view_count": 8792,
+              "accepted_answer_id": 25962889,
+              "answer_count": 9,
+              "score": 22,
+              "last_activity_date": 1451470607,
+              "creation_date": 1410874841,
+              "last_edit_date": 1411046080,
+              "question_id": 25870382,
+              "link": "http://stackoverflow.com/questions/25870382/how-to-prevent-status-bar-from-overlapping-content-with-hidesbarsonswipe-set-on",
+              "title": "How to prevent status bar from overlapping content with hidesBarsOnSwipe set on UINavigationController?"
+              },
+              {
+              "tags": [
+                       "ios",
+                       "swift",
+                       "casting",
+                       "uinavigationcontroller",
+                       "uisplitviewcontroller"
+                       ],
+              "owner": {
+              "reputation": 1,
+              "user_id": 2697901,
+              "user_type": "registered",
+              "profile_image": "https://www.gravatar.com/avatar/f4d5359197e25c781a334d525c833d0f?s=128&d=identicon&r=PG&f=1",
+              "display_name": "David Reid",
+              "link": "http://stackoverflow.com/users/2697901/david-reid"
+              },
+              "is_answered": false,
+              "view_count": 32,
+              "answer_count": 0,
+              "score": -2,
+              "last_activity_date": 1451371782,
+              "creation_date": 1451170602,
+              "last_edit_date": 1451371782,
+              "question_id": 34476037,
+              "link": "http://stackoverflow.com/questions/34476037/could-not-cast-value-of-type-uinavigationcontroller-to-uisplitviewcontroller",
+              "title": "Could not cast value of type &#39;UINavigationController&#39; to &#39;UISplitViewController&#39;"
+              },
+              {
+              "tags": [
+                       "ios",
+                       "uiviewcontroller",
+                       "uinavigationcontroller",
+                       "uitabbarcontroller",
+                       "uistoryboard"
+                       ],
+              "owner": {
+              "reputation": 66,
+              "user_id": 4839913,
+              "user_type": "registered",
+              "accept_rate": 44,
+              "profile_image": "https://www.gravatar.com/avatar/df7e8051c88ec3b4d0e7a8d92f3e2470?s=128&d=identicon&r=PG&f=1",
+              "display_name": "Eric Johnson",
+              "link": "http://stackoverflow.com/users/4839913/eric-johnson"
+              },
+              "is_answered": false,
+              "view_count": 23,
+              "answer_count": 2,
+              "score": 0,
+              "last_activity_date": 1451260699,
+              "creation_date": 1449715137,
+              "question_id": 34192797,
+              "link": "http://stackoverflow.com/questions/34192797/uinavigationcontroller-storyboard-hopping",
+              "title": "UINavigationController Storyboard Hopping"
+              },
+              {
+              "tags": [
+                       "ios",
+                       "objective-c",
+                       "xcode",
+                       "swift",
+                       "uisplitviewcontroller"
+                       ],
+              "owner": {
+              "reputation": 439,
+              "user_id": 4590961,
+              "user_type": "registered",
+              "accept_rate": 17,
+              "profile_image": "https://i.stack.imgur.com/PiCC4.jpg?s=128&g=1",
+              "display_name": "Said Sikira",
+              "link": "http://stackoverflow.com/users/4590961/said-sikira"
+              },
+              "is_answered": true,
+              "view_count": 51,
+              "accepted_answer_id": 34469909,
+              "answer_count": 1,
+              "score": 1,
+              "last_activity_date": 1451120447,
+              "creation_date": 1451083361,
+              "last_edit_date": 1451118744,
+              "question_id": 34467049,
+              "link": "http://stackoverflow.com/questions/34467049/detail-uinavigationcontroller-issue-in-uisplitviewcontroller",
+              "title": "Detail UINavigationController issue in UISplitViewController"
+              }
+              ],
+    "has_more": true,
+    "quota_max": 10000,
+    "quota_remaining": 9980
+}

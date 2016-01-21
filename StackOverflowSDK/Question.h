@@ -10,9 +10,9 @@
 
 @interface Question : NSObject
 
-@property (strong, nonatomic) NSString *answer_count;
+@property (nonatomic) NSInteger answer_count;
 @property (strong, nonatomic) NSString *question_id;
 @property (strong, nonatomic) NSString *title;
-
+@property (strong, nonatomic) NSArray *tags;
 
 @end

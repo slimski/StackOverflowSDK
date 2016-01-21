@@ -13,6 +13,8 @@
 @interface StackOverflowCommunicator : NSObject
 
 @property (weak, nonatomic) id<StackOverflowCommunicatorDelegate> delegate;
--(void)searchQuestionsByText:(NSString *)text;
+- (void)searchQuestionsByText:(NSString *)text;
+- (void)getPopularQuestionsByOwnerId:(NSUInteger)ownerId;
+- (void)getPopularQuestionsByTag:(NSString *)tag;
 
 @end

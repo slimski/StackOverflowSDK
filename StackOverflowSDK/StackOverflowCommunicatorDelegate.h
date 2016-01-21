@@ -13,4 +13,10 @@
 - (void)searchCompletedWithResult:(NSData *)result;
 - (void)searchFailedWithError:(NSError *)error;
 
+- (void)popularUserQuestionsCompletedWithResult:(NSData *)result;
+- (void)popularUserQuestionsFailedWithError:(NSError *)error;
+
+- (void)popularTagQuestionsCompletedWithResult:(NSData *)result;
+- (void)popularTagQuestionsFailedWithError:(NSError *)error;
+
 @end

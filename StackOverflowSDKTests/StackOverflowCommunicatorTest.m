@@ -26,34 +26,78 @@ BOOL done;
     done = YES;
 }
 
--(void)searchFailedWithError:(NSError *)error
+- (void)searchFailedWithError:(NSError *)error
 {
     self.receivedError = error;
     done = YES;
 }
 
-- (void)setUp {
+- (void)popularUserQuestionsCompletedWithResult:(NSData *)result
+{
+    self.receivedResult = result;
+    done = YES;
+}
+
+- (void)popularUserQuestionsFailedWithError:(NSError *)error
+{
+    self.receivedError = error;
+    done = YES;
+}
+
+- (void)popularTagQuestionsCompletedWithResult:(NSData *)result
+{
+    self.receivedResult = result;
+    done = YES;
+}
+
+- (void)popularTagQuestionsFailedWithError:(NSError *)error
+{
+    self.receivedError = error;
+    done = YES;
+}
+
+- (void)setUp
+{
     [super setUp];
     self.receivedResult = nil;
     self.receivedError = nil;
+    done = NO;
     self.communicator = [[StackOverflowCommunicator alloc]init];
     self.communicator.delegate = self;
 }
 
-- (void)tearDown {
+- (void)tearDown
+{
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
-- (void)testExample {
+- (void)testSearchQuestion
+{
+    XCTAssertFalse(self.receivedResult);
+    XCTAssertFalse(self.receivedError);
+    XCTAssertFalse(done);
     [self.communicator searchQuestionsByText:@"UINavigationController"];
     XCTAssertTrue([self waitForCompletion:10.0]);
-    
-    // NSLog(self.receivedResult);
+    XCTAssertTrue(self.receivedResult);
+    XCTAssertFalse(self.receivedError);
+}
+
+- (void)testPopularUserQuestions
+{
+    XCTAssertFalse(self.receivedResult);
+    XCTAssertFalse(self.receivedError);
+    XCTAssertFalse(done);
+    [self.communicator getPopularQuestionsByOwnerId:1];
+    XCTAssertTrue([self waitForCompletion:10.0]);
+    XCTAssertTrue(self.receivedResult);
+    XCTAssertFalse(self.receivedError);
 }
 
 
-- (BOOL)waitForCompletion:(NSTimeInterval)timeoutSecs {
+
+- (BOOL)waitForCompletion:(NSTimeInterval)timeoutSecs
+{
     NSDate *timeoutDate = [NSDate dateWithTimeIntervalSinceNow:timeoutSecs];
     
     do {
