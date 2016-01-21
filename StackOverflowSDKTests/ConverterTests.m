@@ -7,15 +7,10 @@
 //
 
 #import <XCTest/XCTest.h>
-//#import <Foundation/Foundation.h>
 #import "User.h"
 #import "Question.h"
 #import "User.h"
 #import "ModelsConverter.h"
-//#import "Models/ModelsConverter.h"
-//#import "StackOverflowSDK/Models/ModelsConverter.h"
-
-//@class ModelsConverter;
 
 @interface ConverterTests : XCTestCase
 
