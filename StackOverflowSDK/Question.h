@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "User.h"
 
 @interface Question : NSObject
 
@@ -14,5 +15,6 @@
 @property (strong, nonatomic) NSString *question_id;
 @property (strong, nonatomic) NSString *title;
 @property (strong, nonatomic) NSArray *tags;
+@property (strong, nonatomic) User *owner;
 
 @end

@@ -8,7 +8,9 @@
 
 #import <XCTest/XCTest.h>
 //#import <Foundation/Foundation.h>
+#import "User.h"
 #import "Question.h"
+#import "User.h"
 #import "ModelsConverter.h"
 //#import "Models/ModelsConverter.h"
 //#import "StackOverflowSDK/Models/ModelsConverter.h"
@@ -44,6 +46,9 @@ NSData *testData;
     for (Question *question in result) {
         XCTAssertTrue(question.title);
         XCTAssertTrue(question.question_id);
+        XCTAssertTrue(question.owner);
+        XCTAssertTrue(question.owner.user_id);
+        XCTAssertTrue(question.owner.display_name);
     }
 }
 

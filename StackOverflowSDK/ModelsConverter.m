@@ -8,6 +8,7 @@
 
 #import "ModelsConverter.h"
 #import "Question.h"
+#import "User.h"
 
 @implementation ModelsConverter
 
@@ -26,12 +27,18 @@
     NSArray *results = [parsedObject valueForKey:@"items"];
     NSLog(@"Count %lu", (unsigned long)questions.count);
     
-    for (NSDictionary *groupDic in results) {
+    for (NSDictionary *result in results) {
         Question *question = [[Question alloc] init];
         
-        for (NSString *key in groupDic) {
-            if ([question respondsToSelector:NSSelectorFromString(key)]) {
-                [question setValue:[groupDic valueForKey:key] forKey:key];
+        for (NSString *key in result)
+        {
+            if ([key  isEqual: @"owner"])
+            {
+                [question setValue:[ModelsConverter userFromDictionary:[result valueForKey:key]] forKey:key];
+            }
+            else if ([question respondsToSelector:NSSelectorFromString(key)])
+            {
+                [question setValue:[result valueForKey:key] forKey:key];
             }
         }
         
@@ -39,6 +46,20 @@
     }
     
     return questions;
+}
+
++ (User *)userFromDictionary:(NSDictionary *)dict
+{
+    User *user = [[User alloc] init];
+    for (NSString *key in dict)
+    {
+        if ([user respondsToSelector:NSSelectorFromString(key)])
+        {
+            [user setValue:[dict valueForKey:key] forKey:key];
+        }
+    }
+    
+    return user;
 }
 
 @end
