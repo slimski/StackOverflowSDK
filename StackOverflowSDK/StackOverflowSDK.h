@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <StackOverflowSDK/Question.h>
-#import <StackOverflowSDK/StackOverflowCommunicatorDelegate.h>
+#import <StackOverflowSDK/SearchQueryDelegate.h>
+#import <StackOverflowSDK/PopularQuestionsDelegate.h>
 #import <StackOverflowSDK/StackOverflowCommunicator.h>
 #import <StackOverflowSDK/ModelsConverter.h>
 

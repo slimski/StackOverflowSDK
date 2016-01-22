@@ -7,10 +7,11 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "StackOverflowCommunicatorDelegate.h"
+#import "SearchQueryDelegate.h"
+#import "PopularQuestionsDelegate.h"
 #import "StackOverflowCommunicator.h"
 
-@interface StackOverflowCommunicatorTest : XCTestCase<StackOverflowCommunicatorDelegate>
+@interface StackOverflowCommunicatorTest : XCTestCase<SearchQueryDelegate, PopularQuestionsDelegate>
 @property (strong, nonatomic) StackOverflowCommunicator *communicator;
 @property (strong, nonatomic) NSData *receivedResult;
 @property (strong, nonatomic) NSError *receivedError;
@@ -64,6 +65,7 @@ BOOL done;
     done = NO;
     self.communicator = [[StackOverflowCommunicator alloc]init];
     self.communicator.delegate = self;
+    self.communicator.questionsDelegate = self;
 }
 
 - (void)tearDown

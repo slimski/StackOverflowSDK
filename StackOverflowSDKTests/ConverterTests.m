@@ -9,7 +9,6 @@
 #import <XCTest/XCTest.h>
 #import "User.h"
 #import "Question.h"
-#import "User.h"
 #import "ModelsConverter.h"
 
 @interface ConverterTests : XCTestCase

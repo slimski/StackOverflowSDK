@@ -7,7 +7,8 @@
 //
 
 #import "StackOverflowCommunicator.h"
-#import "StackOverflowCommunicatorDelegate.h"
+#import "SearchQueryDelegate.h"
+#import "PopularQuestionsDelegate.h"
 
 @implementation StackOverflowCommunicator
 -(void)searchQuestionsByText:(NSString *)text
@@ -35,9 +36,9 @@
     [NSURLConnection sendAsynchronousRequest:[[NSURLRequest alloc] initWithURL:url] queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
         
         if (error) {
-            [self.delegate popularUserQuestionsFailedWithError:error];
+            [self.questionsDelegate popularUserQuestionsFailedWithError:error];
         } else {
-            [self.delegate popularUserQuestionsCompletedWithResult:data];
+            [self.questionsDelegate popularUserQuestionsCompletedWithResult:data];
         }
     }];
 }
@@ -51,9 +52,9 @@
     [NSURLConnection sendAsynchronousRequest:[[NSURLRequest alloc] initWithURL:url] queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
         
         if (error) {
-            [self.delegate popularTagQuestionsFailedWithError:error];
+            [self.questionsDelegate popularTagQuestionsFailedWithError:error];
         } else {
-            [self.delegate popularTagQuestionsCompletedWithResult:data];
+            [self.questionsDelegate popularTagQuestionsCompletedWithResult:data];
         }
     }];
 }
