@@ -9,11 +9,13 @@
 #import "StackOverflowManager.h"
 #import "ModelsConverter.h"
 #import "StackOverflowCommunicator.h"
+#import "SearchQueryDelegate.h"
 
 @implementation StackOverflowManager
 
 - (void)searchQuestionsByText:(NSString *)text
 {
+    NSLog(@"Start searching questions by text: %@", text);
     [self.communicator searchQuestionsByText:text];
 }
 

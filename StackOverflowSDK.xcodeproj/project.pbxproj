@@ -22,9 +22,10 @@
 		624E1B4F1C5117FF00E78533 /* User.h in Headers */ = {isa = PBXBuildFile; fileRef = 624E1B4D1C5117FF00E78533 /* User.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		624E1B501C5117FF00E78533 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 624E1B4E1C5117FF00E78533 /* User.m */; };
 		62A0C72F1C51F71D00DF645E /* PopularQuestionsDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 62A0C72E1C51F71D00DF645E /* PopularQuestionsDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62A0C7321C51FF1900DF645E /* StackOverflowManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 62A0C7301C51FF1900DF645E /* StackOverflowManager.h */; };
+		62A0C7321C51FF1900DF645E /* StackOverflowManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 62A0C7301C51FF1900DF645E /* StackOverflowManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62A0C7331C51FF1900DF645E /* StackOverflowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A0C7311C51FF1900DF645E /* StackOverflowManager.m */; };
-		62A0C7391C52018B00DF645E /* SearchDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 62A0C7381C52018B00DF645E /* SearchDelegate.h */; };
+		62A0C7391C52018B00DF645E /* SearchDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 62A0C7381C52018B00DF645E /* SearchDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62A0C7441C5229C200DF645E /* ManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A0C7431C5229C200DF645E /* ManagerTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		62A0C7301C51FF1900DF645E /* StackOverflowManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackOverflowManager.h; sourceTree = "<group>"; };
 		62A0C7311C51FF1900DF645E /* StackOverflowManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackOverflowManager.m; sourceTree = "<group>"; };
 		62A0C7381C52018B00DF645E /* SearchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchDelegate.h; sourceTree = "<group>"; };
+		62A0C7431C5229C200DF645E /* ManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerTests.m; sourceTree = "<group>"; };
+		62A0C7451C522BBB00DF645E /* build-framework.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "build-framework.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,7 @@
 		6248D3341C4FF3B100023F57 = {
 			isa = PBXGroup;
 			children = (
+				62A0C7451C522BBB00DF645E /* build-framework.sh */,
 				6248D3401C4FF3B100023F57 /* StackOverflowSDK */,
 				6248D34C1C4FF3B100023F57 /* StackOverflowSDKTests */,
 				6248D33F1C4FF3B100023F57 /* Products */,
@@ -119,6 +123,7 @@
 				6248D3631C501F9200023F57 /* StackOverflowCommunicatorTest.m */,
 				6223713F1C50DBC400BE2EC4 /* testData.json */,
 				622371411C50DD5600BE2EC4 /* ConverterTests.m */,
+				62A0C7431C5229C200DF645E /* ManagerTests.m */,
 			);
 			path = StackOverflowSDKTests;
 			sourceTree = "<group>";
@@ -155,9 +160,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6248D35B1C50178C00023F57 /* Question.h in Headers */,
+				6248D3611C501C0300023F57 /* StackOverflowCommunicator.h in Headers */,
 				62A0C7391C52018B00DF645E /* SearchDelegate.h in Headers */,
 				62A0C7321C51FF1900DF645E /* StackOverflowManager.h in Headers */,
-				6248D3611C501C0300023F57 /* StackOverflowCommunicator.h in Headers */,
 				6223713B1C50D65A00BE2EC4 /* ModelsConverter.h in Headers */,
 				624E1B4F1C5117FF00E78533 /* User.h in Headers */,
 				6248D35E1C501AFC00023F57 /* SearchQueryDelegate.h in Headers */,
@@ -276,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				624E1B4C1C51116D00E78533 /* StackOverflowCommunicatorTest.m in Sources */,
+				62A0C7441C5229C200DF645E /* ManagerTests.m in Sources */,
 				622371421C50DD5600BE2EC4 /* ConverterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,9 +393,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = StackOverflowSDK/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INSTALL_PATH = "$(PROJECT_DIR)/build";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.slimski.StackOverflowSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -404,7 +411,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = StackOverflowSDK/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INSTALL_PATH = "$(PROJECT_DIR)/build";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.slimski.StackOverflowSDK;

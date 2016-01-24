@@ -13,7 +13,7 @@
 @implementation StackOverflowCommunicator
 -(void)searchQuestionsByText:(NSString *)text
 {
-    NSString *rawUrl = [NSString stringWithFormat:@"http://api.stackexchange.com/2.2/search?order=desc&sort=activity&intitle=%@&site=stackoverflow", text];
+    NSString *rawUrl = [NSString stringWithFormat:@"https://api.stackexchange.com/2.2/search?order=desc&sort=activity&intitle=%@&site=stackoverflow", text];
     NSLog(@"%@", rawUrl);
 
     NSURL *url = [[NSURL alloc] initWithString:rawUrl];
@@ -29,7 +29,7 @@
 
 - (void)getPopularQuestionsByOwnerId:(NSUInteger)ownerId
 {
-    NSString *rawUrl = [NSString stringWithFormat:@"http://api.stackexchange.com/2.2/users/%lu/questions?order=desc&sort=votes&site=stackoverflow", (unsigned long)ownerId];
+    NSString *rawUrl = [NSString stringWithFormat:@"https://api.stackexchange.com/2.2/users/%lu/questions?order=desc&sort=votes&site=stackoverflow", (unsigned long)ownerId];
     NSLog(@"%@", rawUrl);
     
     NSURL *url = [[NSURL alloc] initWithString:rawUrl];
@@ -45,7 +45,7 @@
 
 - (void)getPopularQuestionsByTag:(NSString *)tag
 {
-    NSString *rawUrl = [NSString stringWithFormat:@"http://api.stackexchange.com/2.2/questions?order=desc&sort=votes&tagged=%@&site=stackoverflow", tag];
+    NSString *rawUrl = [NSString stringWithFormat:@"https://api.stackexchange.com/2.2/questions?order=desc&sort=votes&tagged=%@&site=stackoverflow", tag];
     NSLog(@"%@", rawUrl);
     
     NSURL *url = [[NSURL alloc] initWithString:rawUrl];

@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <StackOverflowSDK/Question.h>
+#import <StackOverflowSDK/User.h>
 #import <StackOverflowSDK/SearchQueryDelegate.h>
 #import <StackOverflowSDK/PopularQuestionsDelegate.h>
 #import <StackOverflowSDK/StackOverflowCommunicator.h>
 #import <StackOverflowSDK/ModelsConverter.h>
+#import <StackOverflowSDK/SearchDelegate.h>
+#import <StackOverflowSDK/StackoverflowManager.h>
 
 //! Project version number for StackOverflowSDK.
 FOUNDATION_EXPORT double StackOverflowSDKVersionNumber;
