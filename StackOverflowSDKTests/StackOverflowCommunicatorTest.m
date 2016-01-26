@@ -10,8 +10,9 @@
 #import "SearchQueryDelegate.h"
 #import "PopularQuestionsDelegate.h"
 #import "StackOverflowCommunicator.h"
+#import "QuestionAnswersDelegate.h"
 
-@interface StackOverflowCommunicatorTest : XCTestCase<SearchQueryDelegate, PopularQuestionsDelegate>
+@interface StackOverflowCommunicatorTest : XCTestCase<SearchQueryDelegate, PopularQuestionsDelegate, QuestionAnswersDelegate>
 @property (strong, nonatomic) StackOverflowCommunicator *communicator;
 @property (strong, nonatomic) NSData *receivedResult;
 @property (strong, nonatomic) NSError *receivedError;
@@ -57,6 +58,18 @@ BOOL done;
     done = YES;
 }
 
+- (void)questionAnswersCompletedWithResult:(NSData *)result
+{
+    self.receivedResult = result;
+    done = YES;
+}
+
+- (void)questionAnswersFailedWithError:(NSError *)error
+{
+    self.receivedError = error;
+    done = YES;
+}
+
 - (void)setUp
 {
     [super setUp];
@@ -66,6 +79,7 @@ BOOL done;
     self.communicator = [[StackOverflowCommunicator alloc]init];
     self.communicator.delegate = self;
     self.communicator.questionsDelegate = self;
+    self.communicator.answersDelegate = self;
 }
 
 - (void)tearDown
@@ -96,7 +110,16 @@ BOOL done;
     XCTAssertFalse(self.receivedError);
 }
 
-
+- (void)testAnswers
+{
+    XCTAssertFalse(self.receivedResult);
+    XCTAssertFalse(self.receivedError);
+    XCTAssertFalse(done);
+    [self.communicator getAnswersForQuestionId:34334462];
+    XCTAssertTrue([self waitForCompletion:10.0]);
+    XCTAssertTrue(self.receivedResult);
+    XCTAssertFalse(self.receivedError);
+}
 
 - (BOOL)waitForCompletion:(NSTimeInterval)timeoutSecs
 {

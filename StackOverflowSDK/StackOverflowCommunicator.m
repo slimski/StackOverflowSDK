@@ -9,6 +9,7 @@
 #import "StackOverflowCommunicator.h"
 #import "SearchQueryDelegate.h"
 #import "PopularQuestionsDelegate.h"
+#import "QuestionAnswersDelegate.h"
 
 @implementation StackOverflowCommunicator
 -(void)searchQuestionsByText:(NSString *)text
@@ -27,9 +28,9 @@
     }];
 }
 
-- (void)getPopularQuestionsByOwnerId:(NSUInteger)ownerId
+- (void)getPopularQuestionsByOwnerId:(int)ownerId
 {
-    NSString *rawUrl = [NSString stringWithFormat:@"https://api.stackexchange.com/2.2/users/%lu/questions?order=desc&sort=votes&site=stackoverflow", (unsigned long)ownerId];
+    NSString *rawUrl = [NSString stringWithFormat:@"https://api.stackexchange.com/2.2/users/%i/questions?order=desc&sort=votes&site=stackoverflow", ownerId];
     NSLog(@"%@", rawUrl);
     
     NSURL *url = [[NSURL alloc] initWithString:rawUrl];
@@ -55,6 +56,22 @@
             [self.questionsDelegate popularTagQuestionsFailedWithError:error];
         } else {
             [self.questionsDelegate popularTagQuestionsCompletedWithResult:data];
+        }
+    }];
+}
+
+- (void)getAnswersForQuestionId:(int)questionId
+{
+    NSString *rawUrl = [NSString stringWithFormat:@"http://api.stackexchange.com/2.2/questions/%i/answers?order=desc&sort=activity&site=stackoverflow&filter=withbody", questionId];
+    NSLog(@"%@", rawUrl);
+    
+    NSURL *url = [[NSURL alloc] initWithString:rawUrl];
+    [NSURLConnection sendAsynchronousRequest:[[NSURLRequest alloc] initWithURL:url] queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+        
+        if (error) {
+            [self.answersDelegate questionAnswersFailedWithError:error];
+        } else {
+            [self.answersDelegate questionAnswersCompletedWithResult:data];
         }
     }];
 }

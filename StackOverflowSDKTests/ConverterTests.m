@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 #import "User.h"
 #import "Question.h"
+#import "Answer.h"
 #import "ModelsConverter.h"
 
 @interface ConverterTests : XCTestCase
@@ -17,12 +18,19 @@
 
 @implementation ConverterTests
 NSData *testData;
+NSData *answersData;
 - (void)setUp {
     [super setUp];
     NSString *filePath = [[NSBundle bundleForClass:[self class]] pathForResource:@"testData" ofType:@"json"];
     NSString *data = [[NSString alloc] initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:NULL];
     testData = [data dataUsingEncoding:NSUTF8StringEncoding];
+
+    NSString *answersFile = [[NSBundle bundleForClass:[self class]] pathForResource:@"testAnswersData" ofType:@"json"];
+    NSString *answers = [[NSString alloc] initWithContentsOfFile:answersFile encoding:NSUTF8StringEncoding error:NULL];
+    answersData = [answers dataUsingEncoding:NSUTF8StringEncoding];
+
     XCTAssertTrue(testData);
+    XCTAssertTrue(answersData);
 
 }
 
@@ -31,7 +39,7 @@ NSData *testData;
     [super tearDown];
 }
 
-- (void)testExample {
+- (void)testQuestions {
     NSError *error = nil;
     NSArray *result = [ModelsConverter questionsFromJsonData:testData error:&error];
     XCTAssertFalse(error);
@@ -44,6 +52,22 @@ NSData *testData;
         XCTAssertTrue(question.owner.user_id);
         XCTAssertTrue(question.owner.display_name);
     }
+}
+
+- (void)testAnswers {
+    NSError *error = nil;
+    NSArray *result = [ModelsConverter answersFromJsonData:answersData error:&error];
+    XCTAssertFalse(error);
+    XCTAssertTrue(result);
+    XCTAssertTrue(result.count == 2);
+    for (Answer *answer in result) {
+        XCTAssertTrue(answer.answer_id);
+        XCTAssertTrue(answer.body);
+        XCTAssertTrue(answer.owner);
+        XCTAssertTrue(answer.owner.user_id);
+        XCTAssertTrue(answer.owner.display_name);
+    }
+
 }
 
 - (void)testPerformanceExample {

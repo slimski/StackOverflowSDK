@@ -26,6 +26,12 @@
 		62A0C7331C51FF1900DF645E /* StackOverflowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A0C7311C51FF1900DF645E /* StackOverflowManager.m */; };
 		62A0C7391C52018B00DF645E /* SearchDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 62A0C7381C52018B00DF645E /* SearchDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62A0C7441C5229C200DF645E /* ManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A0C7431C5229C200DF645E /* ManagerTests.m */; };
+		62D41B881C575BA0005E6F6E /* QuestionAnswersDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D41B871C575BA0005E6F6E /* QuestionAnswersDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62D41B8A1C5760AE005E6F6E /* QuestionsDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D41B891C5760AE005E6F6E /* QuestionsDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62D41B8C1C5760B8005E6F6E /* AnswersDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D41B8B1C5760B8005E6F6E /* AnswersDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62D41B8F1C576586005E6F6E /* Answer.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D41B8D1C576586005E6F6E /* Answer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62D41B901C576586005E6F6E /* Answer.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D41B8E1C576586005E6F6E /* Answer.m */; };
+		62D41B921C576AAE005E6F6E /* testAnswersData.json in Resources */ = {isa = PBXBuildFile; fileRef = 62D41B911C576AAE005E6F6E /* testAnswersData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +68,12 @@
 		62A0C7381C52018B00DF645E /* SearchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchDelegate.h; sourceTree = "<group>"; };
 		62A0C7431C5229C200DF645E /* ManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerTests.m; sourceTree = "<group>"; };
 		62A0C7451C522BBB00DF645E /* build-framework.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "build-framework.sh"; sourceTree = "<group>"; };
+		62D41B871C575BA0005E6F6E /* QuestionAnswersDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionAnswersDelegate.h; sourceTree = "<group>"; };
+		62D41B891C5760AE005E6F6E /* QuestionsDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionsDelegate.h; sourceTree = "<group>"; };
+		62D41B8B1C5760B8005E6F6E /* AnswersDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswersDelegate.h; sourceTree = "<group>"; };
+		62D41B8D1C576586005E6F6E /* Answer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Answer.h; sourceTree = "<group>"; };
+		62D41B8E1C576586005E6F6E /* Answer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Answer.m; sourceTree = "<group>"; };
+		62D41B911C576AAE005E6F6E /* testAnswersData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testAnswersData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +124,8 @@
 				62A0C7301C51FF1900DF645E /* StackOverflowManager.h */,
 				62A0C7311C51FF1900DF645E /* StackOverflowManager.m */,
 				62A0C7381C52018B00DF645E /* SearchDelegate.h */,
+				62D41B891C5760AE005E6F6E /* QuestionsDelegate.h */,
+				62D41B8B1C5760B8005E6F6E /* AnswersDelegate.h */,
 			);
 			path = StackOverflowSDK;
 			sourceTree = "<group>";
@@ -124,6 +138,7 @@
 				6223713F1C50DBC400BE2EC4 /* testData.json */,
 				622371411C50DD5600BE2EC4 /* ConverterTests.m */,
 				62A0C7431C5229C200DF645E /* ManagerTests.m */,
+				62D41B911C576AAE005E6F6E /* testAnswersData.json */,
 			);
 			path = StackOverflowSDKTests;
 			sourceTree = "<group>";
@@ -137,6 +152,8 @@
 				6223713A1C50D65A00BE2EC4 /* ModelsConverter.m */,
 				624E1B4D1C5117FF00E78533 /* User.h */,
 				624E1B4E1C5117FF00E78533 /* User.m */,
+				62D41B8D1C576586005E6F6E /* Answer.h */,
+				62D41B8E1C576586005E6F6E /* Answer.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -146,6 +163,7 @@
 			children = (
 				6248D35D1C501AFC00023F57 /* SearchQueryDelegate.h */,
 				62A0C72E1C51F71D00DF645E /* PopularQuestionsDelegate.h */,
+				62D41B871C575BA0005E6F6E /* QuestionAnswersDelegate.h */,
 				6248D35F1C501C0300023F57 /* StackOverflowCommunicator.h */,
 				6248D3601C501C0300023F57 /* StackOverflowCommunicator.m */,
 			);
@@ -164,6 +182,10 @@
 				62A0C7391C52018B00DF645E /* SearchDelegate.h in Headers */,
 				62A0C7321C51FF1900DF645E /* StackOverflowManager.h in Headers */,
 				6223713B1C50D65A00BE2EC4 /* ModelsConverter.h in Headers */,
+				62D41B8C1C5760B8005E6F6E /* AnswersDelegate.h in Headers */,
+				62D41B881C575BA0005E6F6E /* QuestionAnswersDelegate.h in Headers */,
+				62D41B8A1C5760AE005E6F6E /* QuestionsDelegate.h in Headers */,
+				62D41B8F1C576586005E6F6E /* Answer.h in Headers */,
 				624E1B4F1C5117FF00E78533 /* User.h in Headers */,
 				6248D35E1C501AFC00023F57 /* SearchQueryDelegate.h in Headers */,
 				62A0C72F1C51F71D00DF645E /* PopularQuestionsDelegate.h in Headers */,
@@ -258,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				622371401C50DBC400BE2EC4 /* testData.json in Resources */,
+				62D41B921C576AAE005E6F6E /* testAnswersData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				624E1B501C5117FF00E78533 /* User.m in Sources */,
+				62D41B901C576586005E6F6E /* Answer.m in Sources */,
 				62A0C7331C51FF1900DF645E /* StackOverflowManager.m in Sources */,
 				6223713C1C50D65A00BE2EC4 /* ModelsConverter.m in Sources */,
 				6248D35C1C50178C00023F57 /* Question.m in Sources */,

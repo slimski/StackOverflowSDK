@@ -7,6 +7,7 @@
 //
 
 #import "ModelsConverter.h"
+#import "Answer.h"
 #import "Question.h"
 #import "User.h"
 
@@ -27,7 +28,8 @@
     NSArray *results = [parsedObject valueForKey:@"items"];
     NSLog(@"Count %lu", (unsigned long)questions.count);
     
-    for (NSDictionary *result in results) {
+    for (NSDictionary *result in results)
+    {
         Question *question = [[Question alloc] init];
         
         for (NSString *key in result)
@@ -46,6 +48,44 @@
     }
     
     return questions;
+}
+
++ (NSArray *)answersFromJsonData:(NSData *)json error:(NSError **)error
+{
+    // TODO: copy-paste
+    NSError *localError = nil;
+    NSDictionary *parsedObject = [NSJSONSerialization JSONObjectWithData:json options:0 error:&localError];
+    
+    if (localError != nil) {
+        *error = localError;
+        return nil;
+    }
+    
+    NSMutableArray *answers = [[NSMutableArray alloc] init];
+    
+    NSArray *results = [parsedObject valueForKey:@"items"];
+    NSLog(@"Count %lu", (unsigned long)answers.count);
+    
+    for (NSDictionary *result in results)
+    {
+        Answer *answer = [[Answer alloc] init];
+        
+        for (NSString *key in result)
+        {
+            if ([key  isEqual: @"owner"])
+            {
+                [answer setValue:[ModelsConverter userFromDictionary:[result valueForKey:key]] forKey:key];
+            }
+            else if ([answer respondsToSelector:NSSelectorFromString(key)])
+            {
+                [answer setValue:[result valueForKey:key] forKey:key];
+            }
+        }
+        
+        [answers addObject:answer];
+    }
+    
+    return answers;
 }
 
 + (User *)userFromDictionary:(NSDictionary *)dict
