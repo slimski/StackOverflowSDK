@@ -62,7 +62,7 @@
 
 - (void)getAnswersForQuestionId:(int)questionId
 {
-    NSString *rawUrl = [NSString stringWithFormat:@"http://api.stackexchange.com/2.2/questions/%i/answers?order=desc&sort=activity&site=stackoverflow&filter=withbody", questionId];
+    NSString *rawUrl = [NSString stringWithFormat:@"https://api.stackexchange.com/2.2/questions/%i/answers?order=desc&sort=activity&site=stackoverflow&filter=withbody", questionId];
     NSLog(@"%@", rawUrl);
     
     NSURL *url = [[NSURL alloc] initWithString:rawUrl];
