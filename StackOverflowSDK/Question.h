@@ -11,7 +11,7 @@
 
 @interface Question : NSObject
 
-@property (nonatomic) NSInteger answer_count;
+@property (nonatomic) int answer_count;
 @property (nonatomic) int question_id;
 @property (strong, nonatomic) NSString *title;
 @property (strong, nonatomic) NSArray *tags;

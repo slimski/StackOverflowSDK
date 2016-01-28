@@ -136,9 +136,9 @@
 			children = (
 				6248D34F1C4FF3B100023F57 /* Info.plist */,
 				6248D3631C501F9200023F57 /* StackOverflowCommunicatorTest.m */,
-				6223713F1C50DBC400BE2EC4 /* testData.json */,
 				622371411C50DD5600BE2EC4 /* ConverterTests.m */,
 				62A0C7431C5229C200DF645E /* ManagerTests.m */,
+				6223713F1C50DBC400BE2EC4 /* testData.json */,
 				62D41B911C576AAE005E6F6E /* testAnswersData.json */,
 			);
 			path = StackOverflowSDKTests;

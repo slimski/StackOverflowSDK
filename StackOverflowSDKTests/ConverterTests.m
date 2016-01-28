@@ -19,7 +19,9 @@
 @implementation ConverterTests
 NSData *testData;
 NSData *answersData;
-- (void)setUp {
+
+- (void)setUp
+{
     [super setUp];
     NSString *filePath = [[NSBundle bundleForClass:[self class]] pathForResource:@"testData" ofType:@"json"];
     NSString *data = [[NSString alloc] initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:NULL];
@@ -34,8 +36,8 @@ NSData *answersData;
 
 }
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+- (void)tearDown
+{
     [super tearDown];
 }
 
@@ -68,13 +70,6 @@ NSData *answersData;
         XCTAssertTrue(answer.owner.display_name);
     }
 
-}
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
 }
 
 @end

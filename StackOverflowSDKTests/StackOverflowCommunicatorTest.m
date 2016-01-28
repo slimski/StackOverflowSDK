@@ -111,6 +111,17 @@ BOOL done;
     XCTAssertFalse(self.receivedError);
 }
 
+- (void)testPopularTagQuestions
+{
+    XCTAssertFalse(self.receivedResult);
+    XCTAssertFalse(self.receivedError);
+    XCTAssertFalse(done);
+    [self.communicator getPopularQuestionsByTag:@"ios"];
+    XCTAssertTrue([self waitForCompletion:10.0]);
+    XCTAssertTrue(self.receivedResult);
+    XCTAssertFalse(self.receivedError);
+}
+
 - (void)testAnswers
 {
     XCTAssertFalse(self.receivedResult);
