@@ -1,7 +1,7 @@
 # StackOverflowSDK
 This is a demo project. It contains the stackoverflow framework. This framework helps to work with stackoverflow API: http://api.stackexchange.com/docs
 
-How to use this framework:
+How to use this framework:  
 1. Build in XCode for all configurations (iphone 5 sim/iphone 6 sim/device)  
 2. Locate framework in Finder  
 3. Copy create_fat_framework.sh to project Derived Data folder  
