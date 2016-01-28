@@ -26,6 +26,7 @@
 		62A0C7331C51FF1900DF645E /* StackOverflowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A0C7311C51FF1900DF645E /* StackOverflowManager.m */; };
 		62A0C7391C52018B00DF645E /* SearchDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 62A0C7381C52018B00DF645E /* SearchDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62A0C7441C5229C200DF645E /* ManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A0C7431C5229C200DF645E /* ManagerTests.m */; };
+		62BA9FE01C5A175900E73EAE /* create_fat_framework.sh in Resources */ = {isa = PBXBuildFile; fileRef = 62BA9FDF1C5A175900E73EAE /* create_fat_framework.sh */; };
 		62D41B881C575BA0005E6F6E /* QuestionAnswersDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D41B871C575BA0005E6F6E /* QuestionAnswersDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62D41B8A1C5760AE005E6F6E /* QuestionsDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D41B891C5760AE005E6F6E /* QuestionsDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62D41B8C1C5760B8005E6F6E /* AnswersDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D41B8B1C5760B8005E6F6E /* AnswersDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -67,7 +68,7 @@
 		62A0C7311C51FF1900DF645E /* StackOverflowManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackOverflowManager.m; sourceTree = "<group>"; };
 		62A0C7381C52018B00DF645E /* SearchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchDelegate.h; sourceTree = "<group>"; };
 		62A0C7431C5229C200DF645E /* ManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerTests.m; sourceTree = "<group>"; };
-		62A0C7451C522BBB00DF645E /* build-framework.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "build-framework.sh"; sourceTree = "<group>"; };
+		62BA9FDF1C5A175900E73EAE /* create_fat_framework.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = create_fat_framework.sh; sourceTree = "<group>"; };
 		62D41B871C575BA0005E6F6E /* QuestionAnswersDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionAnswersDelegate.h; sourceTree = "<group>"; };
 		62D41B891C5760AE005E6F6E /* QuestionsDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionsDelegate.h; sourceTree = "<group>"; };
 		62D41B8B1C5760B8005E6F6E /* AnswersDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswersDelegate.h; sourceTree = "<group>"; };
@@ -98,10 +99,10 @@
 		6248D3341C4FF3B100023F57 = {
 			isa = PBXGroup;
 			children = (
-				62A0C7451C522BBB00DF645E /* build-framework.sh */,
 				6248D3401C4FF3B100023F57 /* StackOverflowSDK */,
 				6248D34C1C4FF3B100023F57 /* StackOverflowSDKTests */,
 				6248D33F1C4FF3B100023F57 /* Products */,
+				62BA9FDF1C5A175900E73EAE /* create_fat_framework.sh */,
 			);
 			sourceTree = "<group>";
 		};
@@ -272,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62BA9FE01C5A175900E73EAE /* create_fat_framework.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

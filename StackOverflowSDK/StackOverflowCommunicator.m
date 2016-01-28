@@ -14,7 +14,7 @@
 @implementation StackOverflowCommunicator
 -(void)searchQuestionsByText:(NSString *)text
 {
-    NSString *rawUrl = [NSString stringWithFormat:@"https://api.stackexchange.com/2.2/search?order=desc&sort=activity&intitle=%@&site=stackoverflow", text];
+    NSString *rawUrl = [[NSString stringWithFormat:@"https://api.stackexchange.com/2.2/search?order=desc&sort=activity&intitle=%@&site=stackoverflow", text] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSLog(@"%@", rawUrl);
 
     NSURL *url = [[NSURL alloc] initWithString:rawUrl];
@@ -46,7 +46,7 @@
 
 - (void)getPopularQuestionsByTag:(NSString *)tag
 {
-    NSString *rawUrl = [NSString stringWithFormat:@"https://api.stackexchange.com/2.2/questions?order=desc&sort=votes&tagged=%@&site=stackoverflow", tag];
+    NSString *rawUrl = [[NSString stringWithFormat:@"https://api.stackexchange.com/2.2/questions?order=desc&sort=votes&tagged=%@&site=stackoverflow", tag] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSLog(@"%@", rawUrl);
     
     NSURL *url = [[NSURL alloc] initWithString:rawUrl];

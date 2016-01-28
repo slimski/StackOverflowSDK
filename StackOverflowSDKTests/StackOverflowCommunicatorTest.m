@@ -31,6 +31,7 @@ BOOL done;
 - (void)searchFailedWithError:(NSError *)error
 {
     self.receivedError = error;
+    NSLog(@"Search failed with error:%@", error);
     done = YES;
 }
 
@@ -93,7 +94,7 @@ BOOL done;
     XCTAssertFalse(self.receivedResult);
     XCTAssertFalse(self.receivedError);
     XCTAssertFalse(done);
-    [self.communicator searchQuestionsByText:@"UINavigationController"];
+    [self.communicator searchQuestionsByText:@"Navigation Controller"];
     XCTAssertTrue([self waitForCompletion:10.0]);
     XCTAssertTrue(self.receivedResult);
     XCTAssertFalse(self.receivedError);
